@@ -1,0 +1,10 @@
+#!/bin/bash
+
+a=`find $PWD -type f -name "$1"`
+
+if [ "$a" != "" ]
+then
+    echo $a
+else
+    echo "this file not found"
+fi
